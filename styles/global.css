@@ -61,7 +61,7 @@ main {
   color: #D1D8be;
   display: flex;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 3px;
   padding: 20px;
   width: 100%;
@@ -87,13 +87,14 @@ main {
 }
 
 .social-icons-container {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
 }
 
 .social-icon {
-  width: 40px;
+  width: 35px;
+  height: auto;
 }
 
 .social-icons-container a{
