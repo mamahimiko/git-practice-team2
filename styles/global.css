@@ -110,6 +110,7 @@ main {
   margin: 0;
   padding: 30px 0 30px 0;
   color: #262e2b;
+  padding-bottom:27px;
 }
 
 .content-box{
@@ -126,7 +127,7 @@ main {
 
 span.a{font-size: 2rem;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 27px;
 }
 
 .content-box p.img{
@@ -134,7 +135,7 @@ span.a{font-size: 2rem;
 }
 
 .content-box p.img img{
-  width: 60%;
+  width: 50%;
 }
 
 .footer {
