@@ -15,7 +15,6 @@ body {
   flex-direction: column;
 }
 
-/* header */
 .header {
   background-color: #819a91;
   display: flex;
@@ -100,8 +99,6 @@ main {
   flex-grow: 1;
 }
 
-
-/* content-area */
 .content-area{
   width: 100%;
   padding: 30px 0 30px 0;
@@ -139,8 +136,6 @@ span.a{font-size: 2rem;
   width: 50%;
 }
 
-
-/* footer */
 .footer {
   background-color: #819a91;
   color: #D1D8be;
