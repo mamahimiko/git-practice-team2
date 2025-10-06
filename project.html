@@ -5,8 +5,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/project_page.css">
 </head>
 <body>
-    
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="project.html" class="menu">Project</a></li>
+        <li><a href="change.html" class="menu">Change</a></li>
+        <li><a href="branching.html"class="menu">Branching</a></li>
+        <li><a href="about.html" class="menu">About Us</a></li>
+        <li><a href="contact.html"class="menu">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="project-main-container">
+    <section>
+			<h1>Git and GitHub: Working Together Without the Chaos</h1>
+			<div class="about-author-container">
+				<img src="./images/signe_image.jpeg" alt="Signes image" width="60px" height="auto">
+				<div class="author-info">
+				<div class="author-name">Signe B</div>
+				<div class="author-subtitle">FUTUREGAMES student</div>
+				</div>
+			</div>
+			<div class="hero-image-container">
+				<img class="hero-image" src="./images/coding_image.jpg" alt="Coding" width="1000px" height="auto">
+			</div>
+		</section>
+		<div class="project-main-content">
+			<div class="project-main-content-left">
+				<h2>From Solo Coding to Team Projects &#45; Here&apos;s How GitHub Makes It Easy</h2>
+			</div>
+			<div class="project-main-content-right">
+				<section> 
+					<p>Have you ever worked on a project where someone “accidentally” deleted the final version right before the deadline? Or where five people were editing the same file, and nobody knew whose version was the right one?</p>
+					<p>That&apos;s where Git and GitHub swoop in like superheroes for your code and project. Git keeps track of every single change you make, like a time machine for your files, and GitHub takes it a step further by storing your project safely in the cloud so you can collaborate without chaos.</p>
+					<p>In this page, we&apos;ll walk through:
+						<ul>
+							<li>Why remote repositories are essential</li>
+							<li>How to create a project on GitHub</li>
+							<li>The Git commands you&apos;ll actually use (and not just pretend to understand)</li>
+						</ul></p>
+				</section>
+				<section>
+					<h3>Why Remote Repositories Are Necessary</h3>
+					<p>Think of your local repository (the project folder on your computer) as your personal workspace &#45; your secret lab. It&apos;s where you test, tinker, and sometimes break things (no shame). But what happens if your computer suddenly crashes?That&apos;s where remote repositories (like GitHub) come in.</p>
+					<p>A remote repository is your backup and collaboration hub. It lets you:
+						<ul>
+							<li><strong>Keep your project safe online</strong></li>
+								<p>If your computer explodes, your code lives on!</p>
+							<li><strong>Collaborate easily</strong></li>
+								<p>Teammates can clone your project, add new features, and send updates without overwriting each other&apos;s work.</p>
+							<li><strong>Track progress and changes</strong></li>
+								<p>You can see who did what and when, which means no more blaming the wrong person for breaking the code.</p>
+							<li><strong>Show off your work</strong></li>
+								<p>GitHub serves as your online portfolio. Perfect for future you who&apos;s looking for jobs or showcasing your work.</p>
+						</ul>
+					Remember: Local repos are for you, remote repos are for everyone (and your future self).</p>
+					<div class="image-container">
+						<img src="./images/local-and-remote-git-repositories.jpg" alt="remote and local repositories" height="200px" width="auto">
+					</div>
+				</section>
+				<section>
+					<h3>How to Create a Project on GitHub</h3>
+					<p>Creating a project on GitHub is easier than you think.
+					Here&apos;s how to do it step-by-step:
+					<ul>
+						<li><strong>Step 1: Log in to GitHub</strong></li>
+							<p>Go to <a href="https://github.com/">github.com</a> and log in (or sign up if you don&apos;t have an account yet).</p>
+						<li><strong>Step 2: Click the <span class="github-button">New</span> or the “+” and select “New repository”</strong></li>
+							<p>You&apos;ll find the “&#43;” sign at the top-right corner of the page.</p>
+							<div class="add-repo-image">
+								<img src="./images/add_repo.png" alt="How to add repo image"height="200px" width="auto">
+							</div>
+						<li><strong>Step 3: Name your repository</strong></li>
+							<p>Pick a name that makes sense (and isn&apos;t “test123”). This will be your project&apos;s home on GitHub.</p>
+							<div class="name-repo-image">
+								<img src="./images/name_your_repo.png" alt="Add repository image" height="200px" width="auto">
+							</div>
+						<li><strong>Step 4: Add a description (optional, but helpful)</strong></li>
+							<p>A short sentence explaining what your project does. Future you will thank you for it.</p>
+						<li><strong>Step 5: Choose visibility</strong></li>
+							<p><ul>
+								<li>Public &#45; Everyone can see your code (great for open-source and class projects).</li>
+							<li>Private &#45; Only you (and people you invite) can see it. Perfect for secret school projects or world domination plans.</li></p>
+							<div class="github-visibility-image">
+								<img src="./images/github_visibility.png" alt="github visibility" height="200px" width="auto">
+							</div>
+							</ul>
+						<li><strong>Step 6: Initialize with a README (optional)</strong></li>
+							<p>Checking this box gives you a starting file to describe your project. It&apos;s like an “About Me” for your repo.</p>
+							<div class="github-readme-image">
+								<img src="./images/github_readme.png" alt="github readme" height="200px" width="auto">
+							</div>
+						<li><strong>Step 7: Click <span class="github-button">Create repository</span></strong></li>
+					</ul>
+					<p>Boom! You&apos;ve just made a new remote home for your project.
+					Now you&apos;ve got a place in the cloud to safely store, share, and collaborate on your work - you can throw away your USB stick.</p>            
+				</section>
+				<section>
+					<h3>The Git Commands You&apos;ll Actually Use</h3>
+					<p>So you&apos;ve got your shiny new GitHub repo &#45; now it&apos;s time to connect it to your computer and start working like a pro. Don&apos;t worry, these commands aren&apos;t as scary as they look!</p>
+					<strong>1. Create a Project Locally</strong>
+					<p>Start by making a new folder for your project (using your terminal <code>mkdir directory-name</code> or just the usual right&#45;click &rarr; New Folder).
+					Then open that folder in your terminal and run: <code>git init</code>
+					This command turns your folder into a Git repository &#45; basically saying, “Git, please start keeping track of everything I do here.”
+					You can now add your project files (HTML, CSS, code, etc.). Once you&apos;re happy with your progress:
+						<ul>
+							<li><code>git add .</code> tells Git to keep an eye on all your files.</li>
+							<li><code>git commit -m "First commit &#45; my project begins!"</code> saves a snapshot of your progress (the message helps you remember what changed).</li>
+						</ul>
+					</p>
+					<strong>2. Link Your Local Repo to GitHub</strong>
+					<p>Now it&apos;s time to connect your local project to your remote one (the GitHub repo you created earlier). First, copy the HTTPS or SSH link from your GitHub repository page &#45; it looks like this:
+					https://github.com/your-username/your-repo-name.git
+					Then in your terminal:
+						<ul>
+							<li><code>git remote add origin https://github.com/your-username/your-repo-name.git</code></li>
+							<li><code>git branch -M main</code></li>
+							<li><code>git push -u origin main</code></li>
+						</ul>				
+					This means:
+						<ul>
+							<li><code>git remote add origin ...</code> → “Here&apos;s the address of my remote repo.”</li>
+							<li><code>git branch -M main</code> Renames your main branch (for consistency).</li>
+							<li><code>git push -u origin main</code> Uploads your local work to GitHub for the first time!</li>
+						</ul>
+					Now your local and remote repositories are in sync.</p>
+					<strong>3. How Others Can Contribute</strong>
+					<p>One of the best parts about GitHub is collaboration — working together on a project and letting other people help improve your project.
+					Here&apos;s how that usually works: They “fork” your repo (This creates their own copy of your project under their account);
+					They make changes
+					They clone their fork to their computer, edit the files, and use:
+						<ul>
+							<li><code>git add .</code></li>
+							<li><code>git commit -m "Added a cool new feature!"</code></li>
+							<li><code>git push </code>  </li>
+						</ul>
+					They open a Pull Request (PR)
+					A PR is basically them saying: “Hey, I made some improvements — want to add them to your project?”
+					You review and merge; You can see what they changed and decide whether to merge it into your main project.
+					</p>
+				</section>
+				<section>
+					<h3>Quick Recap</h3>
+					<p>
+						<ul>
+							<li><code>git init</code> Start a new local repo.</li>
+							<li><code>git add + git commit</code> Save your changes.</li>
+							<li><code>git remote add origin ...</code> Connect to GitHub.</li>
+							<li><code>git push</code> Upload your work.</li>
+						</ul>
+					Collaboration happens through forks and pull requests.
+					</p>
+				</section>
+				<section>
+					<h3>Wrapping It Up: Now You&apos;re Ready to Git Going</h3>
+					<p>And there you have it &#45; you&apos;ve just leveled up from “What&apos;s a repo?” to “I can push and pull with confidence!”</p>
+					<p>You now know:
+					<ul>
+						<li>Why remote repositories are life-savers (and stress-savers).</li>
+						<li>How to create your very own project on GitHub.</li>
+						<li>The essential Git commands to manage and share your work.</li>
+					</ul>
+					</p>
+					<p>
+					Git and GitHub might seem a bit intimidating at first, but once you get the hang of it, it&apos;s like having superpowers for your projects. You can track every change, collaborate with teammates smoothly, and keep your work safe in the cloud.
+					So go ahead &#45; make a repo, break some code (it&apos;s part of the fun), and commit to becoming a Git wizard!
+					</p>
+				</section>
+			</div>
+		</div>
+  </main>
+  <footer class="footer">
+    <div class="footer-content-left">
+      <p>&copy; DMS Githelp, 2025</p>
+      <p>Hammarby Fabriksväg 61, 120 30 Stockholm</p>
+    </div>
+    <div class="footer-content-right">
+      <div class="follow-us">Follow us on:</div>
+      <div class="social-icons-container">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Faceboook">
+          <img src="./logos/facebook_logo.png" alt="Faceboook logo" class="facebook-icon social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <img src="./logos/instagram_logo.png" alt="Instagram logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin">
+          <img src="./logos/linkedin_logo.png" alt="Linkedin logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://x.com/" target="_blank" aria-label="X">
+          <img src="./logos/x_logo.png" alt="X logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+          <img src="./logos/tiktok_logo.png" alt="TikTok logo" class="social-icon" width="40px" height="auto">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
