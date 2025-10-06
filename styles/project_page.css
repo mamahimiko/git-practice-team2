@@ -1,6 +1,5 @@
 .project-main-container {
   color: #383636;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 0 50px;
 }
@@ -58,7 +57,7 @@
   width: 100%;
 }
 
-.project-main-content-left{
+.project-main-content-left {
   align-self: flex-start;
   font-size: 1.5rem;
   position: sticky;
@@ -66,15 +65,15 @@
   width: 30vw;
 }
 
-.project-main-content-right{
+.project-main-content-right {
   width: 50vw;
 }
 
-.project-main-content-right p{
+.project-main-content-right p {
   line-height: 1.5rem;
 }
 
-.project-main-container code{
+.project-main-container code {
   color: #2da44e;
   font-weight: 700;
 }
@@ -92,7 +91,7 @@
   margin-bottom: 20px;
 }
 
-.add-repo-image img{
+.add-repo-image img {
   height: 150px;
   width: auto;
 }
@@ -103,13 +102,15 @@
   margin-bottom: 20px;
 }
 
-.github-visibility-image, .github-readme-image {
+.github-visibility-image,
+.github-readme-image {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.github-visibility-image img, .github-readme-image img{
+.github-visibility-image img,
+.github-readme-image img {
   height: auto;
   width: 100%;
 }
@@ -117,10 +118,10 @@
 .github-button {
   background-color: #2da44e;
   border-radius: 6px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   color: white;
   display: inline-block;
   font-weight: 600;
-  font-family: system-ui, 'Helvetica Neue', sans-serif;
+  font-family: system-ui, "Helvetica Neue", sans-serif;
   padding: 6px 12px;
 }
