@@ -144,8 +144,10 @@ span.a {
   background-color: #819a91;
   color: #d1d8be;
   display: flex;
+  flex-wrap: wrap;
   font-size: 1rem;
   font-weight: 500;
+  justify-content: space-between;
   letter-spacing: 3px;
   padding: 20px;
   width: 100%;
@@ -154,31 +156,28 @@ span.a {
 .footer-content-left {
   display: flex;
   flex-direction: column;
-  width: 50%;
 }
 
 .footer-content-right {
   align-items: center;
   display: flex;
-  justify-content: right;
-  width: 60%;
+  justify-content: flex-end;
 }
 
 .follow-us {
   padding-right: 10px;
-  width: 40%;
   text-align: right;
 }
 
 .social-icons-container {
-  width: 30%;
   display: flex;
+  gap: 10px;
   justify-content: space-around;
 }
 
 .social-icon {
-  width: 35px;
   height: auto;
+  width: 35px;
 }
 
 .social-icons-container a {
