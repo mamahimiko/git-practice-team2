@@ -101,6 +101,10 @@ main {
   padding: 40px 0 40px 0;
 }
 
+.main_index{
+  background-color: #d7c593;
+}
+
 .content-area {
   width: 70%;
   margin: 0 auto;
@@ -109,10 +113,10 @@ main {
 .content-area h1 {
   font-size: 3.5rem;
   font-weight: 500;
-  text-align: center;
   margin: 0;
   padding: 10px 0 30px 0;
   color: #262e2b;
+  text-align: center;
 }
 
 .content-box {
@@ -122,8 +126,9 @@ main {
 }
 
 .content-box .introduction-text {
-  width: 100%;
+  width: 46%;
   font-size: 1.4rem;
+  padding-top: 75px;
 }
 
 span.a {
@@ -133,19 +138,21 @@ span.a {
 }
 
 .content-box p.img {
-  width: 100%;
+  width: 50%;
 }
 
 .content-box p.img img {
-  width: 60%;
+  width: 100%;
 }
 
 .footer {
   background-color: #819a91;
   color: #d1d8be;
   display: flex;
+  flex-wrap: wrap;
   font-size: 1rem;
   font-weight: 500;
+  justify-content: space-between;
   letter-spacing: 3px;
   padding: 20px;
   width: 100%;
@@ -154,33 +161,45 @@ span.a {
 .footer-content-left {
   display: flex;
   flex-direction: column;
-  width: 50%;
 }
 
 .footer-content-right {
   align-items: center;
   display: flex;
-  justify-content: right;
-  width: 60%;
+  justify-content: flex-end;
 }
 
 .follow-us {
   padding-right: 10px;
-  width: 40%;
   text-align: right;
 }
 
 .social-icons-container {
-  width: 30%;
   display: flex;
+  gap: 10px;
   justify-content: space-around;
 }
 
 .social-icon {
-  width: 35px;
   height: auto;
+  width: 35px;
 }
 
 .social-icons-container a {
   text-decoration: none;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .content-box {
+  display: inline;
+  }
+
+  .content-box p.img {
+  width:100%;
+  }
+
+  .content-box .introduction-text {
+  width: 100%;
+  padding-top: 0;
+  }
 }
