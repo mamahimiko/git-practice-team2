@@ -99,6 +99,9 @@ body {
 main {
   flex-grow: 1;
   padding: 40px 0 40px 0;
+}
+
+.main_index{
   background-color: #d7c593;
 }
 

@@ -15,6 +15,7 @@ body {
 .project-main-container h1,h2 {
   font-size: 3.5rem;
   font-weight: 300;
+  margin: 24px 0;
 }
 
 .about-author-container {
@@ -37,6 +38,10 @@ body {
   position: relative;
 }
 
+.about-author-container p.img {
+  margin: 0;
+}
+
 .about-author-container img {
   border-radius: 50%;
 }
@@ -49,6 +54,11 @@ body {
 
 .author-name {
   font-style:oblique;
+  margin: 0;
+}
+
+.author-subtitle {
+  margin: 0;
 }
 
 .project-main-content {
