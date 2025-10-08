@@ -30,6 +30,12 @@ body{
   height: 400px;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+
+.hero-image-container img{
+  top: -30px; 
+  position: relative;
 }
 
 .about-author-container img {
