@@ -5,8 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branching</title>
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/branching.css">
 </head>
 <body>
-    
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="menu">Home</a></li>
+        <li><a href="project.html" class="menu">Project</a></li>
+        <li><a href="change.html" class="menu">Change</a></li>
+        <li><a href="branching.html"class="menu">Branching</a></li>
+        <li><a href="about.html" class="menu">About Us</a></li>
+        <li><a href="contact.html"class="menu">Contact</a></li>
+        <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="project-main-container">
+    <div class="wrap">
+      <h1>Branches: Your Code’s Safety Net</h1>
+      <div class="about-author-container">
+        <p class="img"><img src="./images/Dobeen_image.jpg" alt="Dobeens image" width="60px" height="auto"></p>
+        <div class="author-info">
+          <p class="author-name">Dobeen A</p>
+          <p class="author-subtitle">FUTUREGAMES student</p>
+        </div>
+      </div>
+      <p class="hero-image-container"><img src="./images/coding_image.jpg" alt="coding image"  width="100%" height="auto"></p>
+      <section class="project-main-content">
+        <div class="project-main-content-left">
+          <h2 style="font-size: 3rem">Why Branching is important?</h2>
+        </div>
+        <div class="project-main-content-right">
+          <p>In Git, branching helps developers work on new features, bug fixes, 
+          or experiments without changing the main code.
+          </p>
+          <h2 style="font-size: 20px;">It is important because</h2>
+          <p>- Keeps the main code safe – You can try new things without breaking the main project. <br>
+            - Helps group work – Many developers can work on different parts at the same time. <br>
+            - Helps with testing – You can check each branch before adding it to the main code. <br>
+            - Easy to combine – When the work is ready, you can merge it back into the main branch.
+          </p>
+        </div>
+      </section>
+      <section class="project-main-content">
+        <div class="project-main-content-left-second">
+          <h2 style="font-size: 3rem">Make a new branch</h2>
+        </div>
+        <div class="project-main-content-right">
+          <p>step1: <br><span class="step"></span><code>git checkout -b branch_name</code><br>Make a new branch and switch to it.</p>
+          <p>step2: Add your changes <br><span class="step"></span><code>git add .</code><br>Get your changed files ready to save.</p>
+          <p>step3: Save your changes (commit)<br><span class="step"></span><code>git commit -m "message"</code><br>Save your changes in the branch.<br>
+          <span></span>Write a message to explain your work.
+          </p>
+          <p>step4: Push the branch to GitHub<br><span class="step"></span><code> git push origin branch_name</code><br><span></span>Send your branch and changes to the online repository. <br>
+          But the main branch is not changed yet.
+          </p>
+          <p>step5: Merge the branch into main<br><span class="step"></span><code>git checkout main git merge branch_name</code><br>Put your branch changes into the main branch.<br>
+          Now everyone can use your changes from the main branch.
+          </p>
+          <p>step6:Delete the branch(local)<br><span class="step"></span><code>git branch -d branch_name</code><br>Delete the branch if you do not need it anymore.<br>
+          Only delete branches that are already merged.
+          </p>
+          <p>step:7 <br><span class="step"></span><code>git push origin --delate name</code></span><br>To delete the branch on GitHub</p>
+          <p class="img"><img src="./images/branch_img.png" alt="branch code image" width="90%"></p>
+          <p class="img"><img src="./images/delete_img.png" alt="branch delete img" width="87%"></p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-content-left">
+      <p>&copy; DMS Githelp, 2025</p>
+      <p>Hammarby Fabriksväg 61, 120 30 Stockholm</p>
+    </div>
+    <div class="footer-content-right">
+      <div class="follow-us">Follow us on:</div>
+      <div class="social-icons-container">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Faceboook">
+          <img src="./logos/facebook_logo.png" alt="Faceboook logo" class="facebook-icon social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <img src="./logos/instagram_logo.png" alt="Instagram logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin">
+          <img src="./logos/linkedin_logo.png" alt="Linkedin logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://x.com/" target="_blank" aria-label="X">
+          <img src="./logos/x_logo.png" alt="X logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+          <img src="./logos/tiktok_logo.png" alt="TikTok logo" class="social-icon" width="40px" height="auto">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
