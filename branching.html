@@ -8,70 +8,105 @@
     <link rel="stylesheet" href="./styles/branching.css">
 </head>
 <body>
+  <body>
   <header class="header">
     <div class="logo">
       <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" class="menu">Home</a></li>
-        <li><a href="project.html" class="menu">Project</a></li>
-        <li><a href="change.html" class="menu">Change</a></li>
-        <li><a href="branching.html"class="menu">Branching</a></li>
-        <li><a href="about.html" class="menu">About Us</a></li>
-        <li><a href="contact.html"class="menu">Contact</a></li>
-        <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li>
-      </ul>
+    <nav class="nav"> 
+      <input id="menu-toggle" type="checkbox" class="menu-toggle" /> 
+      <label for="menu-toggle" class="burger-menu"> 
+        <img src="images/hamburger-bar.png" width="40px" height="auto"/> 
+      </label> 
+      <div class="menu-container"> 
+        <ul> 
+          <li><a href="index.html" class="menu">Home</a></li> 
+          <li><a href="project.html" class="menu">Project</a></li> 
+          <li><a href="change.html" class="menu">Change</a></li> 
+          <li><a href="branching.html"class="menu">Branching</a></li> 
+          <li><a href="about.html" class="menu">About Us</a></li> 
+          <li><a href="contact.html"class="menu">Contact</a></li> 
+          <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li> 
+        </ul> 
+      </div> 
     </nav>
   </header>
   <main class="project-main-container">
     <div class="wrap">
       <h1>Branches: Your Code&#39;s Safety Net</h1>
       <div class="about-author-container">
-        <p class="img"><img src="./images/Dobeen_image.jpg" alt="Dobeens image" width="60px" height="auto"></p>
+        <p class="img"><img src="./images/dobeen_image.jpeg" alt="Dobeens image" width="60px" height="auto"></p>
         <div class="author-info">
           <p class="author-name">Dobeen A</p>
           <p class="author-subtitle">FUTUREGAMES student</p>
         </div>
       </div>
-      <p class="hero-image-container"><img src="./images/code_background_img.jpg" alt="coding image"  width="100%" height="auto"></p>
+      <p class="hero-image-container"><img src="./images/branching_background_img.png" alt="coding image"  width="100%" height="auto"></p>
       <section class="project-main-content">
         <div class="project-main-content-left">
           <h2>Why Branching is important?</h2>
         </div>
         <div class="project-main-content-right">
-          <p>In Git, branching helps developers work on new features, bug fixes, 
-          or experiments without changing the main code.
+          <p class="tutorial-text">Branching in Git lets developers work independently without affecting the main project. <br>
+          By creating a branch, you can safely add features, fix bugs, or test ideas without breaking <br> the main code.
+          Once your changes are tested, you merge the branch back to keep the project <br>stable and updated.
           </p>
-          <h2 style="font-size: 20px;">It is important because</h2>
-          <p>- Keeps the main code safe &ndash; You can try new things without breaking the main project. <br>
-            - Helps group work &ndash; Many developers can work on different parts at the same time. <br>
-            - Helps with testing &ndash; You can check each branch before adding it to the main code. <br>
-            - Easy to combine &ndash; When the work is ready, you can merge it back into the main branch.
-          </p>
+          <h2 class="right">It is important because</h2>
+          <ul class="tutorial-text">
+            <li>Keeps the main code safe &ndash; You can try new things without breaking the main project.</li>
+            <li>Helps group work &ndash; Many developers can work on different parts at the same time.</li>
+            <li>Helps with testing &ndash; You can check each branch before adding it to the main code.</li>
+            <li>Easy to combine &ndash; When the work is ready, you can merge it back into the main branch.</li>
+          </ul>
         </div>
       </section>
       <section class="project-main-content">
         <div class="project-main-content-left-second">
-          <h2 style="font-size: 3rem">Make a new branch</h2>
+          <h2>Make a new branch</h2>
         </div>
         <div class="project-main-content-right">
-          <p>step1: <br><span class="step"></span><code>git checkout -b branch_name</code><br>Make a new branch and switch to it.</p>
-          <p>step2: Add your changes <br><span class="step"></span><code>git add .</code><br>Get your changed files ready to save.</p>
-          <p>step3: Save your changes (commit)<br><span class="step"></span><code>git commit -m "message"</code><br>Save your changes in the branch.<br>
-          <span></span>Write a message to explain your work.
-          </p>
-          <p>step4: Push the branch to GitHub<br><span class="step"></span><code> git push origin branch_name</code><br><span></span>Send your branch and changes to the online repository. <br>
-          But the main branch is not changed yet.
-          </p>
-          <p>step5: Merge the branch into main<br><span class="step"></span><code>git checkout main git merge branch_name</code><br>Put your branch changes into the main branch.<br>
-          Now everyone can use your changes from the main branch.
-          </p>
-          <p>step6:Delete the branch(local)<br><span class="step"></span><code>git branch -d branch_name</code><br>Delete the branch if you do not need it anymore.<br>
-          Only delete branches that are already merged.
-          </p>
-          <p>step:7 <br><span class="step"></span><code>git push origin --delate name</code></span><br>To delete the branch on GitHub</p>
+          <div class="step">
+            <p><strong>step1 : Create and Switch to a New Branch</strong></p>
+            <p class="background-color"><code>git checkout -b branch_name</code></p>
+            <p>This command makes a new branch and switches to it right away. <br>
+            Each branch is like a separate workspace where you can work freely.</p>
+          </div>
+          <div class="step">
+            <p><strong>step2: Add your changes</strong></p>
+            <p class="background-color"><code>git add .</code></p>
+            <p>This gets your changed files ready to be saved (committed). <br>
+            It means “I want Git to track these changes.”</p>
+          </div>
+          <div class="step">
+            <p><strong>step3: Save your changes (commit)</strong></p>
+            <p class="background-color"><code>git commit -m "message"</code></p>
+            <p>This saves your work in the branch. <br>
+            The message should describe what you did, so others can understand your changes easily.</p>
+          </div>
+          <div class="step">
+            <p><strong>step4: Push the branch to GitHub</strong></p>
+            <p class="background-color"><code>git push origin branch_name</code></p>
+            <p>This sends your branch and all your changes to GitHub.</p>
+          </div>
+          <div class="step">
+            <p><strong>step5: Merge the branch into main</strong></p>
+            <p class="background-color"><code>git checkout main git merge branch_name</code></p>
+            <p>Now you switch back to the main branch and combine (merge) your changes into it. <br>
+            After merging, the main branch will include your updates.</p>
+          </div>
           <p class="img"><img src="./images/branch_img.png" alt="branch code image" width="90%"></p>
+          <div class="step">
+            <p><strong>step6: Delete the Branch (Local)</strong></p>
+            <p class="background-color"><code>git branch -d branch_name</code></p>
+            <p>If your branch is already merged, you can delete it safely. <br>
+            This helps keep your workspace clean.</p>
+          </div>
+          <div class="step">
+            <p><strong>step7: Delete the Branch on GitHub</strong></p>
+            <p class="background-color"><code>git push origin --delate name</code></p>
+            <p>If you also want to remove the branch from GitHub, use this command. <br>
+            Only delete branches that you no longer need.</p>
+          </div>
           <p class="img_second"><img src="./images/delete_img.png" alt="branch delete img" width="87%"></p>
         </div>
       </section>

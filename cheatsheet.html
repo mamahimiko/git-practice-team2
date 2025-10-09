@@ -3,10 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheat sheet</title>
+    <title>Cheat Sheet</title>
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./fonts/typography.css">
+    <link rel="stylesheet" href="./styles/cheatsheet.css">
 </head>
 <body>
-    
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
+    </div>
+    <nav class="nav"> 
+      <input id="menu-toggle" type="checkbox" class="menu-toggle" /> 
+      <label for="menu-toggle" class="burger-menu"> 
+        <img src="images/hamburger-bar.png" width="40px" height="auto"/> 
+      </label> 
+      <div class="menu-container"> 
+        <ul> 
+          <li><a href="index.html" class="menu">Home</a></li> 
+          <li><a href="project.html" class="menu">Project</a></li> 
+          <li><a href="change.html" class="menu">Change</a></li> 
+          <li><a href="branching.html"class="menu">Branching</a></li> 
+          <li><a href="about.html" class="menu">About Us</a></li> 
+          <li><a href="contact.html"class="menu">Contact</a></li> 
+          <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li> 
+        </ul> 
+      </div> 
+    </nav>
+  </header>
+  <main class="cheatsheet-main-container">
+    <div class="introduction">
+        <h1> Git Cheat Sheet Stickers!</h1>
+        <p>A gift from the Git wizards! &#129497 &#129497 &#129497</p>
+        <p>Use this cheat sheet sticker to make working with Git and GitHub more fun!</p>
+        <p>Happy Hacking! &#128640</p>
+    </div>
+    <div class="sticky-container">
+        <div class="sticky new-project">
+            <h3 class="sticky-title">New Project</h3>
+            <ul>
+                <li>git init</li>
+                <li>git add .  <span>OR</span>  git add file-name</li>
+                <li><span>Create a repo on GitHub</span></li>
+                <li>git commit -m "message"</li>
+                <li>git remote add origin url-of-repo</li>
+                <li>git push -u origin branch-name</li>
+            </ul>
+            <hr></hr>
+            <ul>
+                <li>git push</li>
+                <li>git pull</li>
+            </ul>
+        </div>
+        <div class="sticky pull-change">
+            <h3 class="sticky_title">Pull Changes from Remote</h3>
+            <ul>
+                <li>cd /path/to/your/local/repo</li>
+                <li>git branch OR git branch -a</li>
+                <li>git pull origin branch-name</li>
+                <li>git pull</li>
+            </ul>
+            <hr></hr>
+            <p>This will update your local branch with the latest changes from the remote repository.</p>
+        </div>
+        <div class="sticky">
+            <h3 class="sticky_title">Creating a new branch</h3>
+            <ul>
+                <li>cd /path/to/your/local/repo</li>
+                <li>git branch OR git branch -a</li>
+                <li>git branch new-branch-name</li>
+                <li>git checkout -b new-branch-name</li>
+                <li>git branch</li>
+                <li>git push -u origin new-branch-name</li>
+            </ul>
+            <hr></hr>
+            <p>git checkout <b>-b</b> new-branch-name creates a new branch and immediately switches to it!</p>
+        </div>
+        <div class="sticky">
+            <h3 class="sticky_title">Merging branches</h3>
+            <ul>
+                <li>cd /path/to/your/local/repo</li>
+                <li>git branch</li>
+                <li>git checkout branch-name</li>
+                <li>git pull origin branch-name</li>
+                <li>git merge branch-to-merge</li>
+                <li>git push -u origin new-branch-name</li>
+            </ul>
+            <hr></hr>
+            <ul>
+                <li>git log --oneline --graph --all</li>
+            </ul>
+            <p>It can check that the merge worked</p>
+        </div>
+        <div class="sticky">
+            <h3 class="sticky_title">Reset your local branch</h3>
+            <ul>
+                <li>cd /path/to/your/local/repo</li>
+                <li>git branch</li>
+                <li>git checkout branch-name</li>
+                <li>git fetch origin</li>
+                <li>git reset --hard origin/develop</li>
+            </ul>
+            <hr></hr>
+            <p>This will force your local branch to match the remote branch, discarding any local changes.</p>
+        </div>
+        <div class="sticky">
+            <h3 class="sticky_title">Pulling a new branch from GitHub</h3>
+            <ul>
+                <li>git fetch origin</li>
+                <li>git branch -r</li>
+                <li>git checkout branch-name</li>
+                <li>git checkout -b new-branch origin/new-branch</li>
+            </ul>
+            <hr></hr>
+            <p>Create and switch to a local copy of that branch; Git automatically downloads the latest content of that remote branch into your new local branch.</p>
+        </div>
+        <div class="sticky">
+            <h3 class="sticky_title">Cloning Existing Project in GitHub</h3>
+            <ul>
+                <li><span>Copy the repository URL</span></li>
+                <li>cd /path/to/your/projects</li>
+                <li>git clone URL</li>
+                <li>cd repo-folder</li>
+                <li>git remote -v</li>
+            </ul>
+            <hr></hr>
+            <p>This clones the repository to your local machine and lets you check the remote URL.</p>
+        </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-content-left">
+      <p>&copy; DMS Githelp, 2025</p>
+      <p>Hammarby Fabriksväg 61, 120 30 Stockholm</p>
+    </div>
+    <div class="footer-content-right">
+      <div class="follow-us">Follow us on:</div>
+      <div class="social-icons-container">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Faceboook">
+          <img src="./logos/facebook_logo.png" alt="Faceboook logo" class="facebook-icon social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <img src="./logos/instagram_logo.png" alt="Instagram logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin">
+          <img src="./logos/linkedin_logo.png" alt="Linkedin logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://x.com/" target="_blank" aria-label="X">
+          <img src="./logos/x_logo.png" alt="X logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+          <img src="./logos/tiktok_logo.png" alt="TikTok logo" class="social-icon" width="40px" height="auto">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

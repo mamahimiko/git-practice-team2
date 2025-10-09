@@ -98,3 +98,53 @@ section {
   justify-content: center;
   width: auto;
 }
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .change-main-container h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .hero-image-container,
+  .change-main-content,
+  .change-main-content-left {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-image-container {
+    align-items: center;
+    height: 100%;
+  }
+
+  .hero-image-container img {
+    margin: 0 auto;
+  }
+
+  .change-main-content-left {
+    position: static;
+  }
+
+  .change-main-content-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .change-main-content-right,
+  .change-main-content-right p {
+    width: 100%;
+  }
+
+  .change-main-content-right h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .list,
+  .list-items {
+    padding-left: 0;
+  }
+}
