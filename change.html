@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/global.css" />
-  <title>Git Practice</title>
+  <title>changes</title>
   <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/change_page.css">
 </head>
 <body>
 </head>
@@ -14,21 +14,154 @@
     <div class="logo">
       <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="project.html" class="menu">Project</a></li>
-        <li><a href="change.html" class="menu">Change</a></li>
-        <li><a href="branching.html"class="menu">Branching</a></li>
-        <li><a href="about.html" class="menu">About Us</a></li>
-        <li><a href="contact.html"class="menu">Contact</a></li>
-        <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li>
-      </ul>
+    <nav class="nav"> 
+      <input id="menu-toggle" type="checkbox" class="menu-toggle" /> 
+      <label for="menu-toggle" class="burger-menu"> 
+        <img src="images/hamburger-bar.png" width="40px" height="auto"/> 
+      </label> 
+      <div class="menu-container"> 
+        <ul> 
+          <li><a href="index.html" class="menu">Home</a></li> 
+          <li><a href="project.html" class="menu">Project</a></li> 
+          <li><a href="change.html" class="menu">Change</a></li> 
+          <li><a href="branching.html"class="menu">Branching</a></li> 
+          <li><a href="about.html" class="menu">About Us</a></li> 
+          <li><a href="contact.html"class="menu">Contact</a></li> 
+          <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li> 
+        </ul> 
+      </div> 
     </nav>
   </header>
-  <main>
-    <section class="content-area">
-      <h1>Changes</h1>
-    </section>
+  <main class="change-main-container">
+    <section>
+			<h1>Track Your Progress: Making Changes in Git</h1>
+			<div class="about-author-container">
+				<img src="./images/maho_image.jpeg" alt="Mahos image" width="60px" height="auto">
+				<div class="author-info">
+				<div class="author-name">Maho K</div>
+				<div class="author-subtitle">FUTUREGAMES student</div>
+				</div>
+			</div>
+			<div class="hero-image-container">
+				<img class="hero-image" src="./images/merging-into-highway.png" alt="merging" width="1000px" height="auto">
+			</div>
+		</section>
+		<div class="change-main-content">
+			<div class="change-main-content-left">
+				<h2>From Solo Coding to Team Projects &#45; Here&apos;s How GitHub Makes It Easy</h2>
+			</div>
+			<div class="change-main-content-right">
+				<section> 
+					<p>When you work on a project, you&apos;ll often make many small updates — fixing bugs, adding new features, or improving the design. Git helps you manage these changes safely and efficiently. Instead of losing track of what you did or overwriting someone else&apos;s work, you can save each change as a clear step in your project&apos;s history.</p>
+					<p>On this page, you&apos;ll learn how to add, commit, and push your changes, how to collaborate through pull requests, and how to handle conflicts when different versions of code collide. In short, this is everything you need to know to keep your project&apos;s progress organized and stress-free.</p>
+				</section>
+				<section>
+					<h3>Save Early, Save Often!</h3>
+					<p>Saving changes often with Git means creating small, meaningful commits.</p>
+					<p>This makes it easier to:</p>
+						<ul>
+							<li>Track progress step by step.</li>
+							<li>Revert to an earlier version if something breaks.</li>						
+							<li>Collaborate with others without losing work.</li>
+						</ul>
+          <p>Think of commits as "checkpoints" in a video game.</p>
+				</section>
+				<section>
+					<h3>How to Create a Project on GitHub</h3>
+					<p>When you make changes to your files, Git won&apos;t save them automatically. You need to follow three main steps:</p>
+          <img class="hero-image" src="./images/git_walkthrough.png" alt="Git Walk through" width="500px" height="auto">
+          <h4><strong>Command and todo :</strong></h4>
+          <ol>
+            <li><strong> Stage changes:  </strong>
+              <p>Prepare files to be included in the next commit.</p>
+              <div class="code-background">
+                <code>git add filename</code>
+              </div>
+              <p>OR add all changes:</p>
+              <div class="code-background">
+                <p><code>git add .</code></p>
+              </div>
+              </p>
+            </li>
+            <li><strong> Commit changes : </strong>
+              <p>Save the staged changes with a message describing what you did.</p>
+              <div class="code-background">
+                <p><code>git commit -m “something message”</code></p>
+              </div>
+            </li>
+            <li><strong>Push changes (send to GitHub) : </strong>
+              <p>Send your commits to the remote repository on GitHub!</p>
+              <div class="code-background">
+                <code>git push</code>
+              </div>
+              <p>OR If you are publishing a new branch, then you will need to also configure an upstream remote and branch name:</p>
+              <div class="code-background">
+                <p><code>git push -u origin branch-name</code></p>
+              </div>
+            </li>
+            <li><strong> Pull Changes : </strong>
+              <p>Update your local repository with the latest version from GitHub (important before starting new work).</p>
+              <div class="code-background">
+                <p><code>git pull origin branch-name</code></p>
+              </div>
+            </li>
+          </ol>
+          <p><strong>&#x2705 Workflow Example:</strong></p>
+          <p>Imagine you fixed a typo in index.html.</p>
+          <div class="code-background">
+            <p><code>git add index.html</code></p>
+            <p><code>git commit -m "Fixed typo in homepage"</code></p>
+            <p><code>git push origin main</code></p>
+          </div>
+        </section>
+        <section>
+          <h3>Pull Requests: Teamwork Made Easy</h3>
+          <p>A pull request (PR) is a way to suggest changes before merging them into the main branch. This ensures code quality and smooth teamwork.</p>
+          <h4><strong>Steps to create a Pull Request:</strong></h4>
+          <ul>            
+            <li><strong>Create a new branch:</strong></li>
+            <div class="code-background">
+              <code>git checkout -b feature-name</code>
+            </div>
+            <li><strong>Add and commit your changes.</strong></li>
+            <li><strong>Push your branch to GitHub:</strong></li>
+            <div class="code-background">
+              <code>git push origin feature-name</code>
+            </div>
+            <li><strong>Go to GitHub and click “Compare &  Pull Request.”, where team members can review the code before merging.
+            </strong></li>
+            <p>This process ensures better teamwork, code quality, and fewer mistakes.</p>
+          </ul>
+        </section>
+        <section>
+          <h3>Conflicts Happen! : How to Fix Them</h3>
+          <p>Sometimes, when two people edit the same file in different ways, Git shows a merge conflict. Don&apos;t panic — it&apos;s normal!</p>
+          <h4><strong>What a conflict looks like:</strong></h4>
+          <img class="hero-image" src="./images/change_conflict.jpg" alt="Conflistion" width="500px" height="auto">
+          <h4><strong>How to resolve:</strong></h4>
+          <ul>
+            <li><strong>Accept Current Change</strong> → Keep your version.</li>
+            <li><strong>Accept Incoming Change</strong> → Take the other version.</li>
+            <li><strong>Accept Both Change</strong> → Keep both versions.</li>
+          </ul>
+          <p>After editing and removing the conflict markers (<<<<<<<, =======, >>>>>>>), or click the buttons:</p>
+          <div class="code-background">
+            <p><code>git add filename</code></p>
+            <p><code>git commit -m "Resolved merge conflict in filename"</code>
+            <p><code>git push origin main</code>
+          </div>
+        </section>
+        <section>
+          <h3>&#128161 Pro Tips!</h3>
+          <ul>
+            <li>Use <code>git status</code> often to see what&apos;s happening in your repo.</li>
+            <li>Write clear commit messages (e.g., "Added login form" instead of "fix").</li>
+            <li>Pull before you push — this reduces conflicts.</li>
+            <li>Use branches for new features instead of working directly on main.</li>
+          </ul>
+        </section>
+			</div>
+		</div>
   </main>
   <footer class="footer">
     <div class="footer-content-left">

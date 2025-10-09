@@ -3,10 +3,6 @@ body {
   font-size: 1rem;
 }
 
-p, h2 {
-  margin: 0;
-}
-
 .project-main-container {
   width: 100%;
 }
@@ -16,7 +12,7 @@ p, h2 {
   margin: 0 auto;
 }
 
-.project-main-container h1 {
+.project-main-container h1,h2 {
   font-size: 3.5rem;
   font-weight: 300;
   margin: 24px 0;
@@ -77,6 +73,11 @@ code {
 
 .author-name {
   font-style:oblique;
+  margin: 0;
+}
+
+.author-subtitle {
+  margin: 0;
 }
 
 .project-main-content {
@@ -130,7 +131,9 @@ code {
   width: 85%;
   }
 
-  br{display: none;}
+  br {
+    display: none;
+  }
 
   .hero-image-container {
     height: 180px;

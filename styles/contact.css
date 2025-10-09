@@ -1,0 +1,155 @@
+.main {
+  width: 100%;
+}
+
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.contact_us {
+  width: 50%; 
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 40px 0 40px;
+}
+
+p.text {
+  font-size: 1.1875rem; 
+  line-height: 1.5;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email_address {
+  line-height: 2;
+}
+
+fieldset {
+  text-align: center;
+  height: auto;
+  display: grid; 
+  grid-template-areas: 
+  'a b'
+  'c c'
+  'd d';
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  border: none;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box; 
+  display: block;
+  margin: 0 auto;
+  
+}
+
+.user-input-first-name {
+  grid-area: a;
+}
+
+.user-input-last-name {
+  grid-area: b;
+}
+
+.user-input {
+  grid-area: c;
+}
+
+.user-input-feedback {
+  grid-area: d;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.user-information {
+  text-align: center;
+  width: 40%;
+}
+
+label {
+  font-size: 1.1875rem;
+  display: block;  
+  margin-bottom: 5px; 
+  font-size: 1.1875rem;
+}
+
+legend {
+  font-size: 3rem; 
+  padding-bottom: 25px;
+}
+
+.submit {
+  background: #f3f3f3;;
+  border: 1px solid;
+  cursor: pointer;
+  color: #383636;
+  width: 30%;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.submit:hover {
+  background: #819a91; 
+  color: #fafaf7;
+}
+
+legend {
+  font-size: 3rem; 
+  padding-bottom: 25px;
+}
+
+.submit {
+  background: #f3f3f3;;
+  border: 1px solid;
+  cursor: pointer;
+  color: #383636;
+  width: 30%;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.submit:hover {
+  background: #819a91; 
+  color: #fafaf7;
+}
+
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .wrap {
+  display: inline;
+  }
+
+  .contact_us {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 60px;
+  }
+
+  .user-information {
+  width: 100%;
+  }
+}

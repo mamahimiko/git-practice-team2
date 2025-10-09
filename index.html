@@ -14,23 +14,29 @@
     <div class="logo">
       <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" class="menu">Home</a></li>
-        <li><a href="project.html" class="menu">Project</a></li>
-        <li><a href="change.html" class="menu">Change</a></li>
-        <li><a href="branching.html"class="menu">Branching</a></li>
-        <li><a href="about.html" class="menu">About Us</a></li>
-        <li><a href="contact.html"class="menu">Contact</a></li>
-        <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li>
-      </ul>
+    <nav class="nav"> 
+      <input id="menu-toggle" type="checkbox" class="menu-toggle" /> 
+      <label for="menu-toggle" class="burger-menu"> 
+        <img src="images/hamburger-bar.png" width="40px" height="auto"/> 
+      </label> 
+      <div class="menu-container"> 
+        <ul> 
+          <li><a href="index.html" class="menu">Home</a></li> 
+          <li><a href="project.html" class="menu">Project</a></li> 
+          <li><a href="change.html" class="menu">Change</a></li> 
+          <li><a href="branching.html"class="menu">Branching</a></li> 
+          <li><a href="about.html" class="menu">About Us</a></li> 
+          <li><a href="contact.html"class="menu">Contact</a></li> 
+          <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li> 
+        </ul> 
+      </div> 
     </nav>
   </header>
-  <main>
+  <main class="main_index">
     <section class="content-area">
       <h1>Imagine the world where you understand GITHUB</h1>
       <div class="content-box">
-        <p class="img"><img src="images/content.jpg" alt=""></p>
+        <p class="img"><img src="./images/group_img.jpg" alt=""></p>
         <p class="introduction-text"><span style="font-size: 2rem;"> GitHub</span>
           is a powerful tool for developers, 
           but it can feel confusing at first. Our goal is to make it simple. 

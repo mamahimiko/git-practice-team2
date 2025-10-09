@@ -5,8 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./fonts/typography.css">
+    <link rel="stylesheet" href="./styles/about_us.css">
 </head>
 <body>
-    
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
+    </div>
+    <nav class="nav"> 
+      <input id="menu-toggle" type="checkbox" class="menu-toggle" /> 
+      <label for="menu-toggle" class="burger-menu"> 
+        <img src="images/hamburger-bar.png" width="40px" height="auto"/> 
+      </label> 
+      <div class="menu-container"> 
+        <ul> 
+          <li><a href="index.html" class="menu">Home</a></li> 
+          <li><a href="project.html" class="menu">Project</a></li> 
+          <li><a href="change.html" class="menu">Change</a></li> 
+          <li><a href="branching.html"class="menu">Branching</a></li> 
+          <li><a href="about.html" class="menu">About Us</a></li> 
+          <li><a href="contact.html"class="menu">Contact</a></li> 
+          <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li> 
+        </ul> 
+      </div> 
+    </nav>
+  </header>
+  <main class="about-main-container">
+    <div class="about-content">
+      <section class="about-introduction-section">
+        <div><h1>Get to know us</h1></div>
+        <div class="about-us-paragraph"><p>We are a group of students passionate about making GitHub easier to understand for beginners. When we first started learning version control, we found it confusing and sometimes overwhelming, so we decided to create something that would help others avoid the same struggles.</p>
+        <p>Our goal is to build clear, simple, and beginner&#45;friendly manual that guides new users through GitHub step by step. We focus on explaining the essentials in plain languge, with examples that are easy to follow and relate to real student projects. Whether you&#39;re just creating your first repository or trying to understand branches and merges, we&#39;re here to help you gain confidence and enjoy the learning process.</p></div>
+      </section>
+      <section class="about-card-container">
+        <div class="about-card-wrapper">
+          <div class="info-card">
+            <div class="info-card-image">
+              <img src="./images/signe_image.jpeg" alt="Signes image" width="60px" height="auto">
+            </div>
+            <div class="info-card-name"><p>Signe Bekere</p></div>
+            <div class="info-card-subtitle">
+              <p>FUTUREGAMES Student</p>
+              <p>FED 2025</p></div>
+            <div class="card-links">
+              <a href="https://www.linkedin.com/in/signebekere/" target="_blank" aria-label="Linkedin">
+                <img src="./logos/linkedin_logo.png" alt="Linkedin logo" class="social-icon" width="40px" height="auto">
+              </a>
+              <a href="https://github.com/SgnCycles" target="_blank" aria-label="GitHub">
+                <img src="./logos/github_logo.png" alt="Github logo" class="social-icon" width="40px" height="auto">
+              </a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-image">
+              <img src="./images/maho_image.jpeg" alt="Maho's image" width="60px" height="auto">
+            </div>
+            <div class="info-card-name"><p>Maho Kurauchi</p></div>
+            <div class="info-card-subtitle"><p>FUTUREGAMES Student</p><p>FED 2025</p></div>
+            <div class="card-links">
+              <a href="https://www.linkedin.com/in/maho-kurauchi/" target="_blank" aria-label="Linkedin">
+                <img src="./logos/linkedin_logo.png" alt="Linkedin logo" class="social-icon" width="40px" height="auto">
+              </a>
+              <a href="https://github.com/mamahimiko" target="_blank" aria-label="GitHub">
+                <img src="./logos/github_logo.png" alt="Github logo" class="social-icon" width="40px" height="auto">
+              </a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-image">
+              <img src="./images/dobeen_image.jpeg" alt="Dobeen's image" width="60px" height="auto">
+            </div>
+            <div class="info-card-name"><p>Dobeen Kim</p></div>
+            <div class="info-card-subtitle"><p>FUTUREGAMES Student</p><p>FED 2025</p></div>
+            <div class="card-links">
+              <a href="https://www.linkedin.com/in/dobeen-kim/" target="_blank" aria-label="Linkedin">
+                <img src="./logos/linkedin_logo.png" alt="Linkedin logo" class="social-icon" width="40px" height="auto">
+              </a>
+              <a href="https://github.com/DobeenKim" target="_blank" aria-label="GitHub">
+                <img src="./logos/github_logo.png" alt="Github logo" class="social-icon" width="40px" height="auto">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-content-left">
+      <p>&copy; DMS Githelp, 2025</p>
+      <p>Hammarby Fabriksväg 61, 120 30 Stockholm</p>
+    </div>
+    <div class="footer-content-right">
+      <div class="follow-us">Follow us on:</div>
+      <div class="social-icons-container">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Faceboook">
+          <img src="./logos/facebook_logo.png" alt="Faceboook logo" class="facebook-icon social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <img src="./logos/instagram_logo.png" alt="Instagram logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin">
+          <img src="./logos/linkedin_logo.png" alt="Linkedin logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://x.com/" target="_blank" aria-label="X">
+          <img src="./logos/x_logo.png" alt="X logo" class="social-icon" width="40px" height="auto">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
+          <img src="./logos/tiktok_logo.png" alt="TikTok logo" class="social-icon" width="40px" height="auto">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
