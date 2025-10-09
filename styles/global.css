@@ -206,6 +206,26 @@ span.a {
   width: 100%;
   padding-top: 0;
   }
+
+  .footer, .footer-content-left {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-content-left p {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .footer-content-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .follow-us {
+    margin-top: 7px;
+  }
+}
   
   .menu-container { 
     display: none; 

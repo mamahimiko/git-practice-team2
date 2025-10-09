@@ -80,39 +80,28 @@
 
 .image-container {
   display: flex;
-  height: 200px;
   justify-content: center;
-  width: auto;
+  width: 100%;
 }
 
-.add-repo-image {
-  display: flex;
-  justify-content: space-evenly;
+.repo-image img, .add-repo-image img, .name-repo-image img, .github-visibility-image img,
+.github-readme-image img{
+  height: auto;
+  width: 100%;
+  min-width: 300px;
+}
+
+.repo-image img, .name-repo-image img{
+  max-width: 600px;
+}
+
+.add-repo-image, .github-visibility-image,
+.github-readme-image, .name-repo-image {
   margin-bottom: 20px;
 }
 
 .add-repo-image img {
-  height: 150px;
-  width: auto;
-}
-
-.name-repo-image {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.github-visibility-image,
-.github-readme-image {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.github-visibility-image img,
-.github-readme-image img {
-  height: auto;
-  width: 100%;
+  max-width: 300px;
 }
 
 .github-button {
@@ -124,4 +113,45 @@
   font-weight: 600;
   font-family: system-ui, "Helvetica Neue", sans-serif;
   padding: 6px 12px;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .project-main-container h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .hero-image-container, .project-main-content, .project-main-content-left{
+    display: block;
+    width: 100%;
+  }
+
+  .hero-image-container {
+    align-items: center;
+    height: 100%;
+  }
+
+  .hero-image-container img {
+    margin: 0 auto;
+  }
+
+  .project-main-content-left {
+    position: static;
+  }
+
+  .project-main-content-left h2{
+    font-size: 1.5rem;
+  }
+  
+  .project-main-content-right, .project-main-content-right p {
+    width: 100%;
+  }
+
+  .project-main-content-right h3 {
+    font-size: 1.2rem;
+  }
+
+  .list, .list-items {
+    padding-left: 0;
+  }
 }
