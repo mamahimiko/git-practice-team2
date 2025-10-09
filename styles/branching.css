@@ -1,0 +1,165 @@
+body {
+  color: #383636;
+  font-size: 1rem;
+}
+
+.project-main-container {
+  width: 100%;
+}
+
+.wrap {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.project-main-container h1,h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 24px 0;
+}
+
+.about-author-container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.hero-image-container {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image-container img {
+  top: -30px; 
+  position: relative;
+}
+
+.about-author-container p.img {
+  margin: 0;
+}
+
+.about-author-container img {
+  border-radius: 50%;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.author-name {
+  font-style:oblique;
+  margin: 0;
+}
+
+.author-subtitle {
+  margin: 0;
+}
+
+.project-main-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  align-items: flex-start;
+}
+
+.project-main-content-left-second {
+  position: sticky; 
+  top: 30%; 
+  width: 50%;
+}
+
+.project-main-content p {
+  font-size: 1rem;
+}
+
+.project-main-content-right {
+  width: 50%;
+}
+
+.project-main-content-right p {
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+.project-main-content-right .step{
+  position: relative;
+}
+
+.project-main-content span {
+  width: 8px; 
+  height: 8px; 
+  background: #819A91; 
+  display: block; 
+  border-radius: 50%; 
+  position: absolute; 
+  top: -15px; 
+  left:-18px;
+}
+
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .wrap {
+  width: 85%;
+  }
+
+  .author-name, .author-subtitle {
+  margin: 0;
+  }
+
+  .about-author-container {
+  display: inline;
+  }
+
+  .about-author-container p.img img {
+  width: 90px;
+  height: 90px;
+  }
+
+  .project-main-content {
+  display: inline;
+  }
+
+  .project-main-content-left-second {
+  position: static;
+  top: 0;
+  width: 100%;
+  }
+
+  .project-main-content-right {
+  width: 100%;
+  }
+
+  .project-main-content p {
+  font-size: 1.5rem;
+  }
+
+  .project-main-content-right p.img {
+  width: 100%;
+  }
+  
+  .project-main-content-right img {
+  width: 100%;
+  }
+
+  .project-main-content-right .img_second {
+  width: 97%;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-image-container {
+  display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .project-main-container h1, h2 {
+  font-size: 2.7rem;
+  }
+}
