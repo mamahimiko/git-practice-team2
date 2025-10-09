@@ -114,6 +114,29 @@ legend {
   color: #fafaf7;
 }
 
+legend {
+  font-size: 3rem; 
+  padding-bottom: 25px;
+}
+
+.submit {
+  background: #f3f3f3;;
+  border: 1px solid;
+  cursor: pointer;
+  color: #383636;
+  width: 30%;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.submit:hover {
+  background: #819a91; 
+  color: #fafaf7;
+}
+
 
 @media (min-width: 340px) and (max-width: 1024px) {
   .wrap {

@@ -12,16 +12,22 @@
     <div class="logo">
       <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" class="menu">Home</a></li>
-        <li><a href="project.html" class="menu">Project</a></li>
-        <li><a href="change.html" class="menu">Change</a></li>
-        <li><a href="branching.html"class="menu">Branching</a></li>
-        <li><a href="about.html" class="menu">About Us</a></li>
-        <li><a href="contact.html"class="menu">Contact</a></li>
-        <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li>
-      </ul>
+    <nav class="nav"> 
+      <input id="menu-toggle" type="checkbox" class="menu-toggle" /> 
+      <label for="menu-toggle" class="burger-menu"> 
+        <img src="images/hamburger-bar.png" width="40px" height="auto"/> 
+      </label> 
+      <div class="menu-container"> 
+        <ul> 
+          <li><a href="index.html" class="menu">Home</a></li> 
+          <li><a href="project.html" class="menu">Project</a></li> 
+          <li><a href="change.html" class="menu">Change</a></li> 
+          <li><a href="branching.html"class="menu">Branching</a></li> 
+          <li><a href="about.html" class="menu">About Us</a></li> 
+          <li><a href="contact.html"class="menu">Contact</a></li> 
+          <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li> 
+        </ul> 
+      </div> 
     </nav>
   </header>
   <main class="main">
@@ -42,11 +48,11 @@
           </div>
           <div class="user-input-last-name">
             <label for="last-name">Last name</label>
-            <input type="text" name="last-last-name" id="last-name"required>
+            <input type="text" name="first-name" id="first-name"required>
           </div>
           <div class="user-input">
             <label for="email-address">Email</label>
-            <input type="text-email-address" name="email-address" id="email-address"required>
+            <input type="text" name="email-address" id="email-address"required>
           </div>
           <div class="user-input-feedback">
             <label for="description">Message</label>

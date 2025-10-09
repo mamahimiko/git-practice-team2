@@ -1,0 +1,68 @@
+.about-main-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  padding: 0 50px;
+}
+
+.about-introduction-section h1{
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 12px 0 24px;
+}
+
+.about-us-paragraph {
+  line-height: 1.5rem;
+}
+
+.about-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-card-wrapper {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.info-card {
+  align-items: center;
+  border: 5px solid #CBA6A6;
+  border-radius: 16px;
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  padding: 30px;
+}
+
+.info-card-image img{
+  border-radius: 50%;
+  height: 150px;
+  width: auto;
+}
+
+.info-card-name{
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.info-card-subtitle {
+  text-align: center;
+}
+
+.card-links {
+  padding-top: 10px;
+}
+
+.card-links a{
+  text-decoration: none;
+}
