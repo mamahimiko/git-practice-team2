@@ -1,0 +1,100 @@
+.change-main-container {
+  color: #383636;
+  font-size: 1rem;
+  margin: 0 50px;
+}
+
+.change-main-container h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 24px 0;
+}
+
+.change-main-container h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.about-author-container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.about-author-container img {
+  border-radius: 50%;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.author-name {
+  font-style: oblique;
+}
+
+.hero-image-container {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image-container img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.change-main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.change-main-content-left {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  position: sticky;
+  top: 20px;
+  width: 30vw;
+}
+
+.change-main-content-right {
+  width: 50vw;
+}
+
+.change-main-content-right p {
+  line-height: 1.5rem;
+}
+
+.change-main-container code {
+  color: #2da44e;
+  font-weight: 700;
+}
+
+.code-background {
+  background-color: #f4f5f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+li {
+  padding: 0.5rem 0;
+}
+
+section {
+  padding-bottom: 1.5rem;
+}
+
+.image-container {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: auto;
+}
