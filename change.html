@@ -14,16 +14,22 @@
     <div class="logo">
       <a href="index.html"><img src="logos/team_logo_header.png" class="header-logo"></a> 
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" class="menu">Home</a></li>
-        <li><a href="project.html" class="menu">Project</a></li>
-        <li><a href="change.html" class="menu">Change</a></li>
-        <li><a href="branching.html"class="menu">Branching</a></li>
-        <li><a href="about.html" class="menu">About Us</a></li>
-        <li><a href="contact.html"class="menu">Contact</a></li>
-        <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li>
-      </ul>
+    <nav class="nav"> 
+      <input id="menu-toggle" type="checkbox" class="menu-toggle" /> 
+      <label for="menu-toggle" class="burger-menu"> 
+        <img src="images/hamburger-bar.png" width="40px" height="auto"/> 
+      </label> 
+      <div class="menu-container"> 
+        <ul> 
+          <li><a href="index.html" class="menu">Home</a></li> 
+          <li><a href="project.html" class="menu">Project</a></li> 
+          <li><a href="change.html" class="menu">Change</a></li> 
+          <li><a href="branching.html"class="menu">Branching</a></li> 
+          <li><a href="about.html" class="menu">About Us</a></li> 
+          <li><a href="contact.html"class="menu">Contact</a></li> 
+          <li><a href="cheatsheet.html"class="menu">Cheat sheet</a></li> 
+        </ul> 
+      </div> 
     </nav>
   </header>
   <main class="change-main-container">
@@ -131,7 +137,7 @@
           <h3>Conflicts Happen! : How to Fix Them</h3>
           <p>Sometimes, when two people edit the same file in different ways, Git shows a merge conflict. Don&apos;t panic — it&apos;s normal!</p>
           <h4><strong>What a conflict looks like:</strong></h4>
-          <img src="./images/change_conflict.jpg" alt="Conflistion" width="500px" height="auto">
+          <img class="hero-image" src="./images/change_conflict.jpg" alt="Conflistion" width="500px" height="auto">
           <h4><strong>How to resolve:</strong></h4>
           <ul>
             <li><strong>Accept Current Change</strong> → Keep your version.</li>
