@@ -78,6 +78,17 @@
   font-weight: 700;
 }
 
+.code-container {
+  background-color: #f4f5f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.code-container li {
+  list-style-type: none;
+  line-height: 23px;
+}
+
 .image-container {
   display: flex;
   justify-content: center;
