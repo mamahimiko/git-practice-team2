@@ -225,7 +225,6 @@ span.a {
   .follow-us {
     margin-top: 7px;
   }
-}
   
   .menu-container { 
     display: none; 
@@ -271,5 +270,4 @@ span.a {
   .nav a::after {
     display: none;
   }
-
 }
