@@ -1,7 +1,10 @@
-
 body {
   color: #383636;
   font-size: 1rem;
+}
+
+p, h2 {
+  margin: 0;
 }
 
 .project-main-container {
@@ -13,16 +16,39 @@ body {
   margin: 0 auto;
 }
 
-.project-main-container h1,h2 {
+.project-main-container h1 {
   font-size: 3.5rem;
   font-weight: 300;
   margin: 24px 0;
 }
 
+.project-main-container .right {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.project-main-container h2 {
+  font-size: 2.25rem;
+}
+
+code {
+  color: #2da44e;
+  display: inline-block;
+}
+
+.background-color {
+    background: #f4f5f7;
+  padding: 20px;
+  border-radius: 5px;
+  display: block;
+  width: 80%;
+}
+
+
 .about-author-container {
   display: flex;
   gap: 24px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .hero-image-container {
@@ -35,12 +61,8 @@ body {
 }
 
 .hero-image-container img {
-  top: -30px; 
+  top: 298px; 
   position: relative;
-}
-
-.about-author-container p.img {
-  margin: 0;
 }
 
 .about-author-container img {
@@ -55,11 +77,6 @@ body {
 
 .author-name {
   font-style:oblique;
-  margin: 0;
-}
-
-.author-subtitle {
-  margin: 0;
 }
 
 .project-main-content {
@@ -77,19 +94,23 @@ body {
 
 .project-main-content p {
   font-size: 1rem;
+  padding: 20px 0 20px;
 }
 
 .project-main-content-right {
   width: 50%;
 }
 
-.project-main-content-right p {
-  line-height: 1.5;
-  padding-bottom: 30px;
+.project-main-content-right .tutorial-text {
+  line-height: 1.4;
 }
 
-.project-main-content-right .step{
-  position: relative;
+.project-main-content-right .step {
+  padding-bottom: 20px;
+}
+
+.project-main-content-right .step p{
+  padding: 10px 0 10px;
 }
 
 .project-main-content span {
@@ -109,12 +130,23 @@ body {
   width: 85%;
   }
 
-  .author-name, .author-subtitle {
-  margin: 0;
+  br{display: none;}
+
+  .hero-image-container {
+    height: 180px;
+    margin: 20px 0 20px;
+  }
+
+  .hero-image-container img {
+    top: 146px;
   }
 
   .about-author-container {
-  display: inline;
+    display: inline-block;
+  }
+
+  .author-name, .author-subtitle {
+  margin: 0;
   }
 
   .about-author-container p.img img {
@@ -157,6 +189,10 @@ body {
   .hero-image-container {
   display: none;
   }
+
+  .project-main-content p {
+  font-size: 1rem;
+  }
 }
 
 @media (max-width: 360px) {
@@ -164,5 +200,3 @@ body {
   font-size: 2.7rem;
   }
 }
-
-
