@@ -1,6 +1,5 @@
 body {
   color: #383636;
-  font-size: 1rem;
 }
 
 .project-main-container {
@@ -12,7 +11,7 @@ body {
   margin: 0 auto;
 }
 
-.project-main-container h1,h2 {
+.project-main-container h1 {
   font-size: 3.5rem;
   font-weight: 300;
   margin: 24px 0;
@@ -23,8 +22,45 @@ body {
   font-weight: 700;
 }
 
-.project-main-container h2 {
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.author-name {
+  font-style:oblique;
+  margin: 0;
+}
+
+.author-subtitle {
+  margin: 0;
+}
+
+.hero-image-container {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.hero-image-container img {
+  top: 298px; 
+  position: relative;
+}
+
+.project-main-content-left-second h2 {
   font-size: 2.25rem;
+  margin: 0;
+}
+
+.project-main-content-top h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 code {
@@ -47,40 +83,22 @@ code {
   padding-bottom: 30px;
 }
 
-.hero-image-container {
-  align-items: center;
-  display: flex;
-  height: 400px;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-image-container img {
-  top: 298px; 
-  position: relative;
+.about-author-container p.img {
+  margin: 0;
 }
 
 .about-author-container img {
   border-radius: 50%;
 }
 
-.author-info {
+.project-main-content-top {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  padding-top: 40px;
+  align-items: flex-start;
 }
 
-.author-name {
-  font-style:oblique;
-  margin: 0;
-}
-
-.author-subtitle {
-  margin: 0;
-}
-
-.project-main-content {
+.project-main-content-bottom {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
@@ -99,7 +117,7 @@ code {
 }
 
 .project-main-content-right {
-  width: 50%;
+  width: 53%;
 }
 
 .project-main-content-right .tutorial-text {
@@ -132,20 +150,20 @@ code {
   }
 
   br {
-    display: none;
+  display: none;
   }
 
   .hero-image-container {
-    height: 180px;
-    margin: 20px 0 20px;
+  height: 180px;
+  margin: 20px 0 20px;
   }
 
   .hero-image-container img {
-    top: 146px;
+  top: 146px;
   }
 
   .about-author-container {
-    display: inline-block;
+  display: inline-block;
   }
 
   .author-name, .author-subtitle {
