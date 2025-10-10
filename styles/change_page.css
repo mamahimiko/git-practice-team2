@@ -84,7 +84,7 @@
   border-radius: 5px;
 }
 
-li {
+.change-main-container li {
   padding: 0.5rem 0;
 }
 
@@ -94,7 +94,6 @@ section {
 
 .image-container {
   display: flex;
-  height: 200px;
   justify-content: center;
   width: auto;
 }
