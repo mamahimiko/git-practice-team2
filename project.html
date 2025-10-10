@@ -125,7 +125,7 @@
 					Then open that folder in your terminal and run: <code>git init</code>
 					This command turns your folder into a Git repository &#45; basically saying, “Git, please start keeping track of everything I do here.”
 					You can now add your project files (HTML, CSS, code, etc.). Once you&apos;re happy with your progress:
-						<ul>
+						<ul class="code-container">
 							<li><code>git add .</code> tells Git to keep an eye on all your files.</li>
 							<li><code>git commit -m "First commit &#45; my project begins!"</code> saves a snapshot of your progress (the message helps you remember what changed).</li>
 						</ul>
@@ -134,13 +134,13 @@
 					<p>Now it&apos;s time to connect your local project to your remote one (the GitHub repo you created earlier). First, copy the HTTPS or SSH link from your GitHub repository page &#45; it looks like this:
 					https://github.com/your-username/your-repo-name.git
 					Then in your terminal:
-						<ul>
+						<ul class="code-container">
 							<li><code>git remote add origin https://github.com/your-username/your-repo-name.git</code></li>
 							<li><code>git branch -M main</code></li>
 							<li><code>git push -u origin main</code></li>
 						</ul>				
 					This means:
-						<ul>
+						<ul class="code-container">
 							<li><code>git remote add origin ...</code> → “Here&apos;s the address of my remote repo.”</li>
 							<li><code>git branch -M main</code> Renames your main branch (for consistency).</li>
 							<li><code>git push -u origin main</code> Uploads your local work to GitHub for the first time!</li>
@@ -151,7 +151,7 @@
 					Here&apos;s how that usually works: They “fork” your repo (This creates their own copy of your project under their account);
 					They make changes
 					They clone their fork to their computer, edit the files, and use:
-						<ul>
+						<ul class="code-container">
 							<li><code>git add .</code></li>
 							<li><code>git commit -m "Added a cool new feature!"</code></li>
 							<li><code>git push </code>  </li>
@@ -164,7 +164,7 @@
 				<section>
 					<h3>Quick Recap</h3>
 					<p>
-						<ul>
+						<ul class="code-container">
 							<li><code>git init</code> Start a new local repo.</li>
 							<li><code>git add + git commit</code> Save your changes.</li>
 							<li><code>git remote add origin ...</code> Connect to GitHub.</li>
