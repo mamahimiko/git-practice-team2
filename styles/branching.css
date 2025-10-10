@@ -146,7 +146,7 @@ code {
 
 @media (min-width: 340px) and (max-width: 1024px) {
   .wrap {
-  width: 85%;
+  width: 90%;
   }
 
   br {
@@ -155,15 +155,26 @@ code {
 
   .hero-image-container {
   height: 180px;
-  margin: 20px 0 20px;
+  }
+
+  .project-main-content-bottom,
+  .project-main-content-top {
+  display: inline;
+  }
+
+  .about-author-container p.img img {
+  width: 60px;
+  height: 60px;
+  }
+
+  .project-main-container h1 {
+  margin:0;
+  padding-bottom: 24px;
+  font-size: 2rem;
   }
 
   .hero-image-container img {
   top: 146px;
-  }
-
-  .about-author-container {
-  display: inline-block;
   }
 
   .author-name, .author-subtitle {
@@ -171,12 +182,21 @@ code {
   }
 
   .about-author-container p.img img {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   }
 
   .project-main-content {
   display: inline;
+  }
+
+  .project-main-content-left-second h2 {
+  font-size: 1.2rem;
+  }
+
+  .project-main-content-left h2 {
+  padding-top: 20px;
+  font-size: 1.5rem;
   }
 
   .project-main-content-left-second {
